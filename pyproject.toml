@@ -1,0 +1,21 @@
+[project]
+name = "xlextractor"
+version = "0.1.0"
+description = "Python library for extracting data from Excel files"
+readme = "README.md"
+authors = [
+    { name = "Bradley Morris", email = "bradleydonmorris@hotmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "openpyxl>=3.1.5",
+]
+
+[build-system]
+requires = ["uv_build>=0.10.4,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
